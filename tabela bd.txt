@@ -1,0 +1,24 @@
+create database testedev;
+
+CREATE TABLE Usuarios (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Usuario VARCHAR(50) NOT NULL,
+    Senha VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Produtos (
+    Codigo INT PRIMARY KEY,
+    Descricao VARCHAR(60) NOT NULL,
+    CodigoBarras VARCHAR(14),
+    ValorVenda DECIMAL(10,2),
+    PesoBruto DECIMAL(10,3),
+    PesoLiquido DECIMAL(10,3)
+);
+
+CREATE TABLE Clientes (
+    Codigo INT PRIMARY KEY,
+    Nome VARCHAR(60) NOT NULL,
+    Fantasia VARCHAR(100),
+    Documento VARCHAR(20),
+    Endereco VARCHAR(200)
+);

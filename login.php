@@ -48,6 +48,7 @@ include 'includes/header.php';
             <label>Senha:</label>
             <input type="password" name="senha" required>
             <button type="submit">Confirmar</button>
+            <p>Ainda não tem conta? <a href="<?= BASE_URL ?>/modules/usuarios/cadastrar.php">Cadastre-se aqui</a>.</p>
         </form>
     </div>
 <?php include 'includes/footer.php'; ?>

@@ -6,7 +6,15 @@ include 'includes/header.php';
 ?>
 
 <h3>Cadastros</h3>
-    <p><a href="<?= BASE_URL ?>/modules/produtos/listar.php">📦 Produtos</a></p>
-    <p><a href="<?= BASE_URL ?>/modules/clientes/listar.php">👤 Clientes</a></p>
+<p>
+    <button type="button" class="btn-menu" onclick="window.location.href='<?= BASE_URL ?>/modules/produtos/listar.php'">
+        📦 Produtos
+    </button>
+</p>
+<p>
+    <button type="button" class="btn-menu" onclick="window.location.href='<?= BASE_URL ?>/modules/clientes/listar.php'">
+        👤 Clientes
+    </button>
+</p>
 
 <?php include 'includes/footer.php'; ?>
